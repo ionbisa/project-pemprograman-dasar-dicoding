@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(197, 218, 218);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: blue;
+}
+
+#home {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px rgb(146, 146, 141);
+  color: white;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #113dce;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul img {
+  height: 50px;
+  align-content: flex-start;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: yellow;
+}
+nav a:hover {
+  font-weight: bold;
+}
+
+/* Main */
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+
+.featured-image {
+  width: 60%;
+  max-height: 350px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 5px 5px 5px rgb(96, 132, 231);
+  border-radius: 10px 10px 10px 10px;
+}
+
+figcaption {
+  font-size: 15px;
+  text-align: center;
+  color: #a8b628;
+}
+
+article h2 {
+  text-align: center;
+}
+
+article p {
+  text-align: justify;
+  text-indent: 20px;
+  color: black;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+.table {
+  font-family: sans-serif;
+  color: #242fca;
+  border-collapse: collapse;
+  width: 80%;
+  align-items: center;
+}
+
+.table tr th {
+  font-weight: bold;
+  align-items: center;
+}
+
+.table,
+th,
+td {
+  padding: 5px 20px;
+  text-align: left;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(142, 164, 231);
+}
+
+#contact,
+h1 {
+  color: #113dce;
+}
+
+.contact-form1,
+.contact-form2 {
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 25px;
+  border: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #e4e7f5;
+  font-size: 16px;
+}
+
+#text-area {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: none;
+  background-color: #e4e7f5;
+  font-size: 16px;
+}
+
+input.submit {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  margin-top: 25px;
+  background-color: #1234cc;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  color: yellow;
+  background-color: #113dce;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
+
+.submit:hover {
+  color: #cceb1d;
+}
